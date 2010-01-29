@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>Typing Test</title>
+	<link rel="stylesheet" href="style.css">
+	<!--[if IE 6]><link rel="stylesheet" href="style.ie6.css"><![endif]-->
+</head>
+<body>
+	<div id="wrapper">
+		<div id="box"><span id="cursor"></span></div>
+		<div id="testbox" style="display: none"></div>
+		<div id="toolbox">
+			<div id="speedometer"></div>
+			<div id="keycode"></div>
+			<a href="#" class="button" id="record">record</a>
+			<a href="#" class="button" id="play">play</a>
+			<a href="#" class="button" id="clear">clear</a>
+			<a href="#" class="button" id="save">save</a>
+			<a href="#" class="button" id="load">load</a>
+			<a href="#" class="button" id="test">test</a>
+		</div>
+	</div>
+	<script type="text/javascript" src="minilib.js"></script>
+	<script type="text/javascript" src="typingtest.js"></script>
+	<script type="text/javascript" >
+		TypingTest.init();
+		TypingTest.setTest('HTML, an initialism of HyperText Markup Language, is the predominant markup language for web pages. It provides a means to describe the structure of text-based information in a document.');
+	</script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+body {
+	font-family: sans-serif;
+}
+
+#wrapper {
+	position: relative;
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#box {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	width: 500px;
+	height: 300px;
+	border: 1px solid black;
+	padding: 5px;
+	overflow: auto;
+}
+
+#testbox {
+	position: absolute;
+	left: 10px;
+	top: 330px;
+	width: 500px;
+	height: 300px;
+	border: 1px solid black;
+	padding: 5px;
+}
+
+#testbox span {
+/*  background-color: #A6CBFF; */
+ 	background-color: #66ADFF;
+ 	color: white;
+}
+
+#box span.typo {
+	background: red;
+	color: white;
+}
+
+#box span.char {
+	color: #8B0303;
+	text-shadow: -1px 0 #FFD54D, 0 1px #FFD54D, 1px 0 #FFD54D, 0 -1px #FFD54D;
+}
+
+#box span.char + span.char {
+	color: #D64D1C;
+	font-style: italic;
+}
+
+#box span.char + span.char + span.char + span.char {
+	color: #FFBC05;
+}
+
+#box span.erased {
+	color: #D0D0D0;
+}
+
+#cursor {
+	border-right: 1px solid black;
+}
+
+#toolbox {
+	position: absolute;
+	left: 530px;
+	top: 10px;
+}
+
+#keycode {
+	border: 1px solid black;
+	padding: 5px;
+	text-align: center;
+}
+
+#speedometer{
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	font-size: 25px;
+	margin-bottom: 5px;
+}
+
+#speedometer {
+	background-image: url('speedometer.png');
+}
+
+#keycode {
+	border: 1px solid black;
+}
+
+#toolbox a.button {
+	display: block;
+	margin-top: 5px;
+	width: 100px;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	padding: 3px 0;
+	border: 1px solid black;
+}
+
+a.button:hover {
+	font-weight: bold;
+}
+
+#record {
+	background: #FF5E45;
+}
+
+#play {
+	background: #4873FF;
+}
+
+#clear {
+	background: #47B14E;
+}
+
+#save, #load {
+	background: #B1607D;
+}
+
+#test {
+	background: #FF8B48;
+}
+
+div.message {
+	position: absolute;
+	width: 300px;
+	height: 150px;
+	border: 1px solid black;
+	background: #E7DD73;
+	top: 100px;
+	left: 100px;
+}
+
+div.message a.close {
+	position: absolute;
+	right: 5px;
+	top: 3px;
+	text-decoration: none;
+	color: black;
+	padding: 2px;
+}
+
+div.message a.close:hover {
+	background: black;
+	color: white;
+}
+
+div.message div.info {
+	position: absolute;
+	top: 30px;
+	left: 5px;
+	right: 5px;
+	bottom: 10px;
+	background: #FAFFA4;
+	padding: 5px;
+	overflow: auto;
+	font-family: monospace;
+	font-size: 10px;
+}
